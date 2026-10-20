@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--bytat en till sv-->
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veckans mat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+<!--Ska innehåller Nav och intro.. content -->
+    <header class="header">
+        <a href="#home" class="logo">VECKANS MAT</a>
+        <nav class="main-nav">
+            <a href="#home">Hem</a>
+            <a href="#weekly-menu">Meny</a>
+            <a href="#recipes">Recept</a>
+            <a href="#about">Om oss</a>
+        </nav>
+<!--ingredients länk: Länken behåller alla mats recepts-->
+            <a class="ingredients-button" href="images-recept/veckans-ingredienser.png"> 
+                    Visa alla ingredienser
+            </a>
+    </header>
+<!--mina riktiga content-->
+    <main>
+<!--Sidan ska ger mer info om receiptet-->
+    <section class="hero" id="home">
+        <div class="hero-image">
+            <img src="images-recept/hero-image2.png"
+                alt ="Veckans Meny">               
+        </div>
+        <div class="hero-content">
+            <h1>Mat för hela veckan</h1>
+            <p>Gott,näringsrik och enkel mat som passar en hektisk vardag</p>
+                <ul class="benefits">
+                    <li>Enkla recept</li>
+                    <li>Näringsrika maltider</li>
+                    <li>Sparar tid i vardagen</li>
+                </ul>                 
+            <a class="cta-button" href="#weekly-menu">
+                Se veckans meny &rarr;
+            </a>      
+        </div>
+    </section>
+<!--Veckans special menu som innehåller images,dagar,länk och lite förklaring om maten-->
+    <section class="featured-meals" id="weekly-menu">
+            <a href="" class="logo">VECKANS MAT</a>
+        <article class="meal-card">
+<!--Måndag mat-->
+            <img src="images-recept/fufu-egusi-soup-feast.png" 
+             alt="FUFU MED EGUSI SOPPA">  
+        <div class="meal">
+            <h2 class="Måndag"><strong>Måndag </strong></h2> 
+            <p><strong>Fufu med egusi soppa.</strong><br>
+                Klassisk nigeriansk rätt med krämig egusi soppa,spenat och smkrikt kött.<br>
+                serveras med fufu.
+            </p>
+<!--orderButton välja maten-->
+        <button class="orderButton" id="måndagButton">Beställ/Order</button>
+<!--Order message:Displays confirmation after the button is clicked-->
+              <p class="order-message" id="måndag-message"></p>
+        </div>
+        </article>
+        <article class="meal-card">
+<!--Tisdag mat-->
+            <img src="images-recept/grillad-kyckling-ris-bönor-sallad.png"
+                 alt="GRILLAD KYCKLING MED RIS OCH BÖNOR-SALLAD">
+        <div class="meal">
+            <h2 class="Tisdag"><strong>Tisdag</strong></h2>
+            <p><strong>Grillad kyckling med ris och bönor-sallad</strong><br>
+                Ris med bönor serveras med saftig kyckling i en smakrik sås.
+            </p>
+<!--orderButton välja maten-->
+        <button class="orderButton" id="tisdagButton">Beställ/Order</button>
+<!--Order message:Displays confirmation after the button is clicked-->
+              <p class="order-message" id="tisdag-message"></p>
+        </div>
+        </article>
+        <article class="meal-card">
+<!--Önsdag mat-->
+            <img src="images-recept/jollofrice-matbananer-kcykling.png"
+                  alt="JOLLOFRICE MED MATBANANER OCH KYCKLING">
+        <div class="meal">
+            <h2 class="Önsdag"><strong>Önsdag</strong></h2>
+            <p><strong>Jollofrice med matbananer och kyckling</strong><br>
+                Smakrikt ris kokt i tomatsås med kyddor,serveras<br>
+                 med saftig kyckling och stekt plantain.
+            </p>
+<!--orderButton välja maten-->
+            <button class="orderButton" id="önsdagButton">Beställ/Order</button>
+            <!--Order message:Displays confirmation after the button is clicked-->
+              <p class="order-message" id="önsdag-message"></p>
+        </div>
+        </article>
+        <article class="meal-card">
+<!--Törsdag mat-->
+            <img src="images-recept/kryddig-gryta-stekt-matbananer.png"
+                 alt="KRYDDIG-GRYTA-STEKT-MATBANANER">
+        <div class="meal">
+            <h2 class="Törsdag"><strong>Törsdag</strong></h2>
+            <p><strong>Stekt Plantain med kriddigt kött</strong><br>
+                Söta stekta platains med serveras med mört,<br>
+                krddigt kött i en mustig sås med paprika,
+                lök och färska kryddor.
+            </p>
+<!--orderButton välja maten-->
+            <button class="orderButton" id="törsdagButton">Beställ/Order</button>
+<!--Order message:Displays confirmation after the button is clicked-->
+              <p class="order-message" id="törsdag-message"></p>
+        </div>
+        </article>
+        <article class="meal-card">
+<!--Fredag mat-->
+            <img src="images-recept/puff-puff-kryddig-gryta.png"
+                 alt="PUFF PUFF MED KRYDDIG GRYTA">
+        <div class="meal">
+            <h2 class="Fredag"><strong>Fredag</strong></h2>
+            <p><strong>Puff puff med kryddig gryta</strong><br>
+                    Gyllene och frasiga puff puff serverade med en smakrik,<br> 
+                    kryddig köttgryta med tomater, paprika och lök.
+            </p>
+<!--orderButton välja maten-->
+            <button class="orderButton" id="fredagButton">Beställ/Order</button>
+<!--Order message:Displays confirmation after the button is clicked-->
+              <p class="order-message" id="fredag-message"></p>
+        </div>
+        </article>
+    </section>
+    </main>
+    <footer class="nav">
+        
+    </footer>
+ <!--Footer: Sidan visa lite info om websidan och det slutning-->
+    <footer class="site-footer">
+        <h2> Veckan Mat</h2>
+        <p>Enklare mat för en battre vardag.</p>
+    <p>&copy; 2026 Veckan Mat</p>
+    <Nav class="footer-nav">
+        <a href="#home">Hem</a>
+            <a href="#weekly-menu">Meny</a>
+            <a href="#recipes">Recept</a>
+            <a href="#about">Om oss</a>
+        </nav>
+    </footer>
+<!--Javascript:Connects the html page to the javascript file-->
+<script src="script.js"></script>   
+</body>
+</html>

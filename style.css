@@ -1,0 +1,258 @@
+/*Basic styling for the whole page*The * selects all elements on the page and 
+the box makes it easier to control the size*/
+* {
+    box-sizing:border-box;
+}
+/*This section helps remove the browser default and gives the page a warm bacground */
+body {
+    margin:0;
+    font-family:Arial,sans-serif;
+    background-color: #fbfaf3;
+    color:#123d2d;
+}
+/* Now lets style the each sections*/
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:20px 5%;
+    background-color:#06452e;
+}
+.logo {
+    color:#800020;
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:color 0.3s ease;
+}
+.logo:hover {
+    color: #800020;
+}
+/* Nav:Places the llinks in a row with space between them*/
+.main-nav {
+    display:flex;
+    gap:25px;
+    align-items: center;
+} 
+/* Nav-Links:Removes underlines and sets the text colour
+     and links a smooth color change */
+.main-nav a {
+    display:inline-block;
+    color:white;
+    text-decoration:none;
+    font-size: 16px;
+    padding: 16px;
+    border-color: #e5e5df;
+    transition:color 0.3s ease;
+}
+/*Navigation hover: Changes the link colour to burgundy*/
+.main-nav a:hover {
+    color:#800020;
+}
+/* Hero section:Places the images and tesxts side by side*/
+.hero {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    background-color: #e8f2df;
+}
+
+/*This section controls the image size aand appearance.
+  The object-fit:cover, prevents the image from streching*/
+.hero-image img {
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+/*This styles "Mat för hela veckan". Font-family: changes the heading font*/
+.hero-content h1 {
+    font-family:Georgia,serif;
+    font-size:48px;
+    margin-bottom:20px;
+}
+.featured-meals {
+    padding:50px 5%;
+    background-color: #f5f2e9;
+}
+/*Adds styles and space to the tittles above the weekly meals*/
+.featured-meals h2 {
+    color:#06452e;
+    font-family:Georgia,serif;
+    font-size:36px;
+    text-align:center;
+    margin:0 0 35px;
+}
+/*Meal Card:Places each meal`s info in a neat row*/
+.meal-card {
+    display:flex; 
+    flex-direction: column;
+    align-items:center;
+    gap: 25px;
+    margin: 0 auto 20px;
+    padding:25px;
+    max-width: 1000px;
+    background-color:#fffdf7;
+    border:1px solid #e4e0d5;
+    border-radius:16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease transform 0.3s ease;
+}
+/* Changes the color and lifts the button */
+.meal-card :hover {
+    transform:translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.012);
+}
+/*Meal image:Keeps all food pictures the same size and
+  makes movement smooth when hovering */
+.meal-card img {
+    width:180px;
+    height: 140px;
+    object-fit:cover;
+    border-radius:12px;
+    flex-shrink:0;
+    transition: transform 0.3s ease;
+}
+/* Image hover:Enlarge the picture slightly*/
+.meal-card img :hover {
+    transform:scale(1.05);
+}
+.meal h2 {
+    color:#06452e;
+    font-family:Georgia,serif;
+    font-size: 28px;
+    margin: 0 0 12px;
+    }
+/*Order buttons:Gives the buttons a consistent green style*/
+.meal-card button {
+     background-color: #06452e;
+     color:white;
+     border:none;
+     padding:10px 16px;
+     border-radius:6px;
+     cursor:pointer;
+     transition: background-color 0.3s ease,transform 0.3s ease;
+    }
+/*Button hover:Changes the colour and lifts the button*/
+.meal-card button:hover {
+    background-color: #800020;
+    transform:translateY(-3px);
+}
+/* Footer:Creates a dark green section at the bottom*/
+.site-footer {
+     padding:35px 5%;
+     background-color:#06452e;
+     color:white;
+     text-align:center;
+    }
+ /*footer links: Places navigation links in columns*/
+.footer-nav {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:25px;
+        margin:20px 0;
+    }
+/* Footer links: Sets the link colour and removes underlines*/
+ .footer-nav a {
+        color:#ffffff;
+        text-decoration:none;
+        transition:color 0.3s ease;   
+    }
+/* footer links hover:Adds a soft cream colour*/
+.footer-nav a:hover {
+    color:#800020;
+}  
+/*ingrdients button: styles the header links as button*/
+.ingredients-button {
+     display:inline-block;
+     padding:10px 16px;
+     background-color:#06452e;
+     color:white;
+     text-decoration:none;
+     border-radius:6px;
+     transition:background-color 0.3s ease,transform 0.3s ease;
+    }
+/*Ingredients button hover:Changes colour and lifts the button*/
+.ingredients-button:hover {
+    background-color:#800020;
+    transform: translatey(-3px);
+}
+/*Ingredients heading:styles the main section title*/
+.all-ingredients h2 {
+    color:#06452e;
+    font-family:Goergia,serif;
+    font-size:32px;
+}
+/*Recipe headings:Style each day`s ingredient heading*/
+.all-ingredients h3 {
+    color:#06452e;
+    margin-top:25px;
+}
+/*Meal description:Improves readability */
+.meal p {
+    line-height:1.6;
+    margin:0 0 16px;
+    color: #454545;
+}
+/* Order button:Gives each button a consistent appearance*/
+.OrderButton {
+    background-color:#06452e;
+    color:white;
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:background-color 0.3s ease, transform 0.3s ease;
+}
+/*Order message:Styles the confirmation after clicking*/
+.order-message {
+    color:#174b3a;
+    font-weight:bold;
+    margin-top:12px;
+}
+/*media queries-this changes the meal card on wider screens */
+@media (min-width:700px) {
+    .meal-card {
+        flex-direction:row;
+        align-items:center;
+    }
+}
+/*Mobile: Makes the navigation fit smaller screens*/
+@media(max-width:699px) {
+    .header {
+        flex-wrap:wrap;
+        gap:12px;
+    }
+    .main-nav {
+        flex-wrap:wrap;
+        gap:12px;
+    }
+    .main-nav a {
+        font-size:14px;
+    }
+    /*Ingredients Buton: Prevents the button from overflowing */
+    .ingredients-button {
+        max-width: 100%;
+        box-sizing:border-box;
+    }
+    /*adds a soft background behind the cards*/
+    .featured-meals {
+        background-color:rgb(183, 222, 135);
+    }
+    .logo {
+        flex-wrap:wrap;
+        color: #06452e;
+    }
+    /*Mobile meal cards:Adds space betweeneach card*/
+    .meal-card {
+        margin-bottom:20px;
+        padding: 20px;
+    }
+}
+
+
+
+    
